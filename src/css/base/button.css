@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+}
+
+.button {
+    font-size: 13px;
+    background-color: #1aa4c8;
+    border-radius: 3px;
+    min-width: 100px;
+    height: 32px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 16px;
+}
+
+.button__close {
+    background-color: #fff;
+    color: #001031;
+}

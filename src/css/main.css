@@ -1,0 +1,48 @@
+@import url("./reset/reset.css");
+@import url("./base/button.css");
+@import url("./layout/menu.css");
+@import url("./icon/icon.css");
+@import url("./layout/header.css");
+@import url("./base/input.css");
+@import url("./base/combobox.css");
+@import url("./layout/table.css");
+@import url("./layout/formDetail.css");
+@import url("./layout/contextMenu.css");
+@import url("./layout/formConfirm.css");
+@import url("./layout/formNotice.css");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+input,
+body {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+  width: 0px;
+}
+
+.text-left {
+  text-align: left;
+}

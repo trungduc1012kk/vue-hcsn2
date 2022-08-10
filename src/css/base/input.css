@@ -1,0 +1,76 @@
+.form-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-input .icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input {
+    background-color: #ffffff;
+    border-radius: 2.5px;
+    border: 1px solid #b0b0b0;
+    height: 35px;
+    overflow: hidden;
+    padding: 0 12px 0 14px;
+}
+
+.input:focus-visible,
+.input:hover {
+    outline: none;
+    border-color: #1aa4c8;
+}
+
+.form-input .input-icon {
+    padding-left: 38px;
+}
+
+.up-down {
+    height: 12px;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    appearance: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;
+}
+
+input[type=checkbox]:hover {
+    outline: 4px solid #D6F1F9;
+}
+
+input[type=checkbox]:checked {
+    border: none;
+    background-color: #31B9E2;
+}
+
+input[type=checkbox]:checked::after {
+    display: block;
+}
+
+input[type=checkbox]::after {
+    content: "";
+    background: url("../../assets/icon/qlts-icon.svg") no-repeat -71px -512px;
+    width: 11px;
+    height: 8px;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

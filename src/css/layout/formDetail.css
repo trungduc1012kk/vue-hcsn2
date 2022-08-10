@@ -1,0 +1,136 @@
+#form-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+
+#form-detail .form-detail__container {
+  width: 60%;
+  height: fit-content;
+  max-height: 85%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+#form-detail .form-detail__container::-webkit-scrollbar {
+  width: 0;
+}
+
+.form-detail__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 16px;
+  margin: 0;
+}
+
+.form-detail__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  background-color: #fff;
+  padding: 16px 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-detail__text {
+  display: inline-block;
+}
+
+.form-detail__close {
+  border-radius: 3px;
+}
+
+.form-detail__close:hover {
+  background-color: #e5e5e5;
+}
+
+.row {
+  width: 100%;
+}
+
+.form-detail__content .row .form-input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-detail__content .row .combobox {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+}
+
+.form-detail__content .row .form-input {
+  border: none;
+}
+
+.form-detail__content .row .form-input .input {
+  width: 100%;
+}
+
+.form-detail__content .row .form-input .input:read-only:hover,
+.form-detail__content .row .form-input .input:read-only:focus,
+.form-detail__content .row .form-input .input:read-only {
+  border: 1px solid #b0b0b0;
+  background-color: #f5f5f5;
+}
+
+.form-detail__content .row label span {
+  color: #e03232;
+}
+
+.col-2 {
+  grid-column: 2/4;
+}
+
+.form-detail__controler {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+  background-color: #e5e5e5;
+  gap: 10px;
+  padding: 16px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+.row .input-number {
+  position: relative;
+}
+
+.row .input-number .input {
+  padding-right: 40px;
+}
+
+.row .input-number .up-down {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.row {
+  position: relative;
+}
+
+.err-text {
+  position: absolute;
+  top: calc(100% + 4px);
+  color: #e03232;
+  font-size: 13px;
+}
